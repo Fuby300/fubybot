@@ -4,6 +4,13 @@
  * Robert Borghese
  */
 
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+client.on('ready', () => {
+    console.log('I am ready!');
+});
+
 const Files = require(require('path').join(__dirname, 'js', 'Main.js')).Files;
 
 if(!process.send) {
